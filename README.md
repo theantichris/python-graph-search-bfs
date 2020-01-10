@@ -11,3 +11,5 @@ The function takes 3 parameters:
 * graph: the graph we are searching
 * start_vertex: the vertex we are starting the search on
 * target_value: the value we are searching the graph for
+
+The graph is a Python map with a key for each vertex. The value for the key are the neighboring vertices.
