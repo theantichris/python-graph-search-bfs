@@ -13,4 +13,11 @@ def bfs(graph, start_vertex, target_value):
 
         # Loop through neighboring vertices
         for neighbor in graph[current_vertex]:
-            continue
+            if neighbor not in visited:  # If we have not been to this vertex
+                if neighbor is target_value:  # If the current neighbor is the target
+                    path.append(neighbor) # Add the target to the path
+
+                    return path
+                else:
+                    path.append(neighbor)
+                    bfs_queue.append(neighbor, path)
